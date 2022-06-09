@@ -70,3 +70,10 @@ Simulation performed on Verilator 4.223 devel rev v4.222-59-ge7dc2de1
 Можно видеть, что при обработке исключения было выведено сообщение "Breakpoint is Detect".
 
 Также в dump-файле *sbreak.dump* адреса при `<_start>` и `<trap_vector>` соответствуют указанным в задании *Reset Vector* и *Trap Vector* соответственно.
+7. Также была запущена команда 
+```
+make run_verilator_wf TARGETS="riscv_isa" TRACE=1.
+```
+с помощью которой был сгененрирован wave form.
+
+Папка results содержит следующие файлы sbreak.dump, sim_results.txt, test_results.txt, tracelog_core_0.log
